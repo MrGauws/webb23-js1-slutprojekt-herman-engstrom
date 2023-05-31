@@ -47,6 +47,10 @@ button {
   padding: 10px;
   text-align: center;
   margin: 10px;
+  transition: transform 0.3s ease;
+}
+.forecast-box:hover {
+  transform: scale(1.1);
 }
 .forecast-box img {
   width: 100px; 
