@@ -48,6 +48,10 @@ button {
   text-align: center;
   margin: 10px;
 }
+.forecast-box img {
+  width: 100px; 
+  height: 100px; 
+}
 
 .cloudy {
   background-color: #ccc;
