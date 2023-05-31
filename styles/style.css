@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("/img/1280px-stormclouds-thumb.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 5px;
+}
+
+button {
+  padding: 5px 10px;
+}
+
+.weather-box {
+  margin: 0 auto;
+  text-align: center;
+  width: fit-content;
+}
+
+.forecast-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.forecast-title {
+  margin-bottom: 10px;
+}
+
+.forecast-box {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+}
+
+.cloudy {
+  background-color: #ccc;
+}
+
+.rainy {
+  background-color: lightblue;
+}
+
+.snowy {
+  background-color: white;
+}
+
+.sunny {
+  background-color: yellow;
+}
+
+.other {
+  background-color: lightgray;
+}
