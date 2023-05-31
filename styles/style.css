@@ -72,3 +72,10 @@ button {
 .other {
   background-color: lightgray;
 }
+
+#cityInput,
+#forecastHours,
+[type="submit"] {
+  width: 200px;
+  height: 40px;
+}
