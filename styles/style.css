@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url("./img/1280px-stormclouds-thumb.jpg");
+  background-image: url("../img/1280px-stormclouds-thumb.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
