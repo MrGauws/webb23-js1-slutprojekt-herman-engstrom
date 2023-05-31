@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Väderapp</title>
+  <title>webb23-js1-slutprojekt-herman-engstrom</title>
   <link rel="stylesheet" type="text/css" href="./styles/style.css">
 </head>
 <body>
-  <h1>Väderapp</h1>
+  <h1>webb23-js1-slutprojekt-herman-engstrom</h1>
+  <!-- Form for user input -->
   <form id="cityForm">
+    <!-- Text input for city -->
     <input type="text" id="cityInput" placeholder="Här anger du ditt drömställe">
+    <!-- Dropdown for forecast hours -->
     <select id="forecastHours">
       <option value="3"> 3 timmar</option>
       <option value="6"> 6 timmar</option>
       <option value="9"> 9 timmar</option>
       <option value="12"> 12 timmar</option>
     </select>
+     <!-- Submit button -->
     <button type="submit">Ge mig bra väder!</button>
   </form>
   <!--  -->
+   <!-- Actual weather info container -->
   <div id="weatherInfo" class="weather-box">
     <h2>Aktuellt väder</h2>
   </div>
-  <!--  -->
+  <!-- Forecast container -->
   <div id="forecastContainer" class="forecast-container">
     <h2 class="forecast-title">Väderprognos</h2>
   </div>
