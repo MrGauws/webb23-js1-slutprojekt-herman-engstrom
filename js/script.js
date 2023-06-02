@@ -32,7 +32,8 @@ async function getCoordinatesByCity(city) {
     const data = await response.json();
     if (data.length > 0) {
       const { lat, lon } = data[0];
-      return { latitude: lat, longitude: lon }; // Returns latitude and longitude of the city.
+      // Returns latitude and longitude of the city.
+      return { latitude: lat, longitude: lon };
     } else {
       // Throws an error if no coordinates are found for the city.
       throw new Error('Kunde inte hitta koordinater för staden.');
