@@ -23,6 +23,8 @@ form.addEventListener("submit", (e) => {
   cityInput.value = ""; 
 });
 
+// --------------------- FUNCTIONS BELOW --------------------- //
+
 // Retrieve coordinates for a given city. Using async to handle asynchronous operations since im using await.
 async function getCoordinatesByCity(city) {
   try {
