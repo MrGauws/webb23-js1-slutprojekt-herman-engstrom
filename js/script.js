@@ -63,7 +63,7 @@ async function getWeather(city) {
   }
 }
 
-// Retrieve weather forecast data for a city
+// Retrieves the weather forecast data for a city
 async function getForecast(city, forecastHours) {
   try {
     const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric&lang=sv`);
@@ -78,21 +78,21 @@ async function getForecast(city, forecastHours) {
   }
 }
 
-// Display current weather information
+// Displays the current weather information
 function displayWeather(data) {
   if (data.cod === "404") {
     displayError("Staden hittades inte.");
     return;
   }
 
-  // Extract weather data
+  // Extracts the weather data
   const temperature = data.main.temp;
   const weatherIcon = data.weather[0].icon;
   const description = data.weather[0].description;
   const windSpeed = data.wind.speed;
   const weatherCode = data.weather[0].id;
 
-  // Determine weather class based on weather code and changes color accordingly
+  // Determines the weather class based on weather code and changes color accordingly
   let weatherClass = "";
   if (weatherCode >= 200 && weatherCode < 600) {
     weatherClass = "rainy";
@@ -104,7 +104,7 @@ function displayWeather(data) {
     weatherClass = "cloudy";
   }
 
-  // Get the current day
+  // Gets the current day
   const date = new Date();
   const day = getDayOfWeek(date);
 
@@ -122,14 +122,14 @@ function displayWeather(data) {
   weatherInfo.innerHTML = weatherHTML;
 }
 
-// Display weather forecast information
+// Displays the weather forecast information
 function displayForecast(data, forecastHours) {
   if (data.cod === "404") {
     displayError("Staden hittades inte.");
     return;
   }
 
-  // Extract forecast data
+  // Extracts the forecast data
   const forecastList = data.list;
   const hoursInterval = 3;
   const numIntervals = forecastHours / hoursInterval;
@@ -177,7 +177,7 @@ function displayForecast(data, forecastHours) {
   forecastContainer.innerHTML = forecastHTML;
 }
 
-// Get the day of the week for a given date. Created an array to show what day it is.
+// Gets the day of the week for a given date. Created an array to show what day it is.
 function getDayOfWeek(date) {
   const days = ["Sön", "Mån", "Tis", "Ons", "Tors", "Fre", "Lör"];
   return days[date.getDay()];
