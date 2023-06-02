@@ -107,7 +107,7 @@ function displayWeather(data) {
   // Gets the current day
   const date = new Date();
   const day = getDayOfWeek(date);
-
+  
   // Builds the weather HTML content
   const weatherHTML = `
     <h2>Aktuellt väder (${day})</h2>
